@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos optimizaciones| Optimización semi-Profesional</title>
+    <style>
+        /* VARIABLES EDITABLES - COLORES Y FUENTES */
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #161616;
+            --accent-color: #00ff88; /* Color verde neón para resaltar */
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+            --border-color: #252525;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* NAVEGACIÓN */
+        nav {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+            color: var(--accent-color);
+        }
+
+        .nav-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* SECCIÓN INICIO */
+        header {
+            max-width: 800px;
+            margin: 4rem auto;
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -2px;
+        }
+
+        .intro-p {
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* SECCIÓN PRECIOS / OPCIONES */
+        .grid-prices {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 4px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--text-dim);
+        }
+
+        .card .price {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .card ul {
+            list-style: none;
+            margin-bottom: 2rem;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        .card ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-buy {
+            display: block;
+            text-align: center;
+            background: var(--text-main);
+            color: var(--bg-color);
+            padding: 0.8rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 2px;
+            transition: opacity 0.3s;
+        }
+
+        .btn-buy:hover {
+            opacity: 0.9;
+        }
+
+        /* SECCIÓN DESCARGAS */
+        #downloads {
+            max-width: 1100px;
+            margin: 6rem auto;
+            padding: 2rem 1.5rem;
+            background: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            padding: 4rem 2rem;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Marcos optimizaciones</div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#precios">Servicios</a>
+            <a href="#downloads">Descargas</a>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <h1>Máximo rendimiento para tu hardware.</h1>
+        <p class="intro-p">una pagina de optimización de Windows y hardware tuning para gaming competitivo y productividad profesional.</p>
+    </header>
+
+    <section id="precios" class="grid-prices">
+        <div class="card">
+            <h3>Optimizador Básico</h3>
+            <div class="price">1999 ARS</div>
+            <ul>
+                <li>✓ Limpieza de temporales</li>
+                <li>✓ Deshabilitación de telemetría</li>
+                <li>✓ Configuración de energía</li>
+            </ul>
+            <a href="https://wa.me/+54 9 11 4065-7587" class="btn-buy">Comprar ahora</a>
+        </div>
+
+        <div class="card" style="border-color: #333;">
+            <h3>Optimizador Mejorado</h3>
+            <div class="price">3499 ARS</div>
+            <ul>
+                <li>✓ Todo lo del pack básico</li>
+                <li>✓ Optimización de registro</li>
+                <li>✓ Ajustes de latencia de red y varias cosas mas</li>
+            </ul>
+            <a href="https://wa.me/+54 9 11 4065-7587" class="btn-buy">Comprar ahora</a>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--accent-color);">
+            <h3 style="color: var(--accent-color);">Sistema + Mejorado</h3>
+            <div class="price">7499 ARS</div>
+            <ul>
+                <li>✓ Instalación de OS optimizado</li>
+                <li>✓ Configuración avanzada de drivers</li>
+                <li>✓ Soporte técnico prioritario</li>
+            </ul>
+            <a href="https://wa.me/+54 9 11 4065-7587" class="btn-buy">Comprar ahora</a>
+        </div>
+    </section>
+
+    <section id="downloads">
+        <h2>Área de Descargas</h2>
+        <p style="color: var(--text-dim); margin-top: 1rem;">
+            Los archivos y licencias se entregan manualmente tras verificar el pago. 
+            Si ya realizaste la transacción, recibirás un enlace privado por correo o WhatsApp.
+        </p>
+    </section>
+
+    <footer>
+        <p>Contacto: <strong>marcosoptimizaciones@gmail.com</strong> | Tel: <strong>+54 9 11 4065-7587</strong></p>
+        <p style="margin-top: 1rem;">© 2026 marcos optimizaciones - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
